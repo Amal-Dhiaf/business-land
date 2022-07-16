@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #192440;
+    --secondary-color: #00ffad;
+    --tertiary-color: #292b2c;
+    --quaternary-color: #ffffff;
+}
+
+html {
+    font-size: 10px;
+    font-family: Ubuntu, sans-serif;
+    line-height: 1.5;
+}
+
+/* Write your code below */
+/*BANNER Section Start */
+#banner {
+    background-image: url( ./images/banner-bg-image.jpg) ;
+    color: var(--quaternary-color);
+    padding: 6.4rem 0;
+}
+#banner p{
+  font-size: 2rem;
+  margin: 2.4rem 0;
+}
+#banner header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header img{
+  max-width: 8rem ;
+}
+header a {
+  color: var(--quaternary-color);
+  text-decoration: none;
+  outline: none;
+  font-size: 2rem;
+}
+.btn{
+  text-align: center;
+  padding: 1.2rem 3rem;
+  margin: 2.4rem 0rem;
+  border: transparent 0.2rem solid;
+  border-radius: 2.2rem;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+.btn-secondary{
+  background-color: var(--secondary-color);
+  color: #192440;
+}
+/*BANNER Section End*/ 
+/*BANNER Protection Start*/
+.protection {
+  text-align: center;
+
+}
+.protection .cards{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4rem;
+}
+.protection .cards .card {
+  flex: 1;
+}
+.protection h4{
+  font-size: 2.4rem;
+  margin-bottom: 0.8rem;
+}
+
+.protection h2{
+  margin: 4.8rem 0;
+}
+
+
+
+/*BANNER Protection End*/
+
+/*FEATURES Section Start*/
+.features{
+  margin-top: 7rem;
+}
+.feature{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 4.8rem 1.5rem;
+  flex-wrap: wrap;
+
+}
+.feature-1-wrapper {
+  background-image: linear-gradient(to bottom right,#ffffff 0% 50%,#00FFAD 50% 100%);
+
+}
+.feature-2-wrapper {
+  background-color: var(--secondary-color);
+  
+}
+.btn-primary {
+  background-color: var(--primary-color);
+  color : var(--quaternary-color)
+}
+.feature img{
+  max-width: 50%;
+}
+.feature-2-img{
+  order :1
+
+}
+
+/*FEATURES Section End*/
+/*PRICING Section Start*/
+.pricing {
+  text-align: center;
+}
+.pricing .cards{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.pricing .card{
+  background-color: lightgrey;
+  padding: 2.4rem 1.5rem;
+  border-radius: 0.5rem;
+  width: 100%;
+  max-width: 30rem;
+
+}
+.pricing .dark{
+  background-color: var(--primary-color);
+  color: var(--quaternary-color);
+}
+.pricing h4{
+  font-size: 2.4rem;
+}
+.pricing .card span{
+  font-size: 9rem;
+}
+.pricing p{
+  padding: 0.5rem 0; 
+}
+.btn-outline-primary {
+  border-color: var(--primary-color);
+  background-color: transparent;
+  color:var(--primary-color);
+}
+.pricing h2{
+  margin: 4.8rem;
+}
+/*PRICING Section End*/
+/*PARTNERS Section Start*/
+.partners{
+  display: flex;
+  justify-content:  space-between;
+  flex-wrap: wrap;
+  margin:4.8rem;
+  align-items: center;
+}
+
+
+/*PARNTERS Section End*/
+/* Write your code above */
+
+
+h1 {
+    font-size: 7.2rem;
+    margin: 4.8rem 0;
+    line-height: 1.1;
+    color: #ffffff;
+}
+
+h2 {
+    font-size: 4.5rem;
+}
+
+p, li, label {
+    font-size: 1.6rem;
+    
+}
+
+.font-weight-bold {
+    font-weight: 700;
+}
+
+.font-weight-light {
+    font-weight: 300;
+}
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+  .feature-2 img{
+    order:0;
+  }
+  .feature div, .feature img{
+    flex: 1;
+  }
+  
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+}
